@@ -3,95 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FEBRABAN POWER BI</title>
+  <title>Febraban Power BI</title>
   <style>
     body {
-      background-color: white;
-      font-family: Calibri, Arial, sans-serif;
+      background-color: #0c1d30;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
-      color: black;
-    }
-
-    .logo {
-      margin-top: 50px;
-      width: 500px;
-      max-width: 90%;
-    }
-
-    h1 {
-      font-size: 2.8em;
-      margin: 20px 0 50px;
-    }
-
-    .icon-section {
-      display: flex;
-      justify-content: center;
-      gap: 100px;
-      margin-top: 50px;
-      flex-wrap: wrap;
-    }
-
-    .icon-block {
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 250px;
+      justify-content: center;
+      min-height: 100vh;
     }
 
-    .icon-block img {
-      width: 120px;
+    h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #ccc;
+      margin: 10px 0 40px 0;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .icon-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      max-width: 180px;
+    }
+
+    .icon-button img {
+      width: 100px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
-    .icon-block p {
-      font-size: 1.2em;
-      line-height: 1.4;
-      font-weight: 500;
+    .icon-button span {
+      text-align: center;
     }
 
     footer {
-      margin-top: 100px;
-      text-align: left;
-      padding: 20px;
+      position: fixed;
+      left: 20px;
+      bottom: 10px;
       font-size: 0.9em;
-      color: #333;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
+      color: #ccc;
+      text-align: left;
     }
   </style>
 </head>
 <body>
 
-  <!-- LOGO FEBRABAN COM ÍCONE AZUL -->
-  <img src="Febraban-icon.png" alt="Logo Febraban" class="logo" />
+  <h1>FEBRABAN POWER BI</h1>
+  <p>MAIO 2025</p>
 
-  <!-- TÍTULO -->
-  <h1>POWER BI</h1>
-
-  <!-- BLOCO DOS ÍCONES -->
-  <div class="icon-section">
-    <!-- Ícone 1 -->
-    <a href="ocupacoes.html" class="icon-block">
-      <img src="icon-panorama.png.png" alt="Panorama RH" />
-      <p>Panorama de RH, Jurídico<br>Trabalhista e Sindical</p>
+  <div class="buttons">
+    <!-- Botão 1 -->
+    <a href="ocupacoes.html" class="icon-button">
+      <img src="panorama-icon.png" alt="Panorama RH" />
+      <span>Panorama RH, Jurídico e Sindical</span>
     </a>
 
-    <!-- Ícone 2 -->
-    <a href="estatisticas.html" class="icon-block">
-      <img src="icon-estatisticas.png.png" alt="Estatísticas" />
-      <p>Estatísticas</p>
+    <!-- Botão 2 -->
+    <a href="estatisticas.html" class="icon-button">
+      <img src="estatisticas-icon.png.png" alt="Estatísticas" />
+      <span>Estatísticas</span>
     </a>
   </div>
 
-  <!-- Rodapé -->
   <footer>
-    @Febraban 2025
+    @ 2025 Febraban
   </footer>
 
 </body>
