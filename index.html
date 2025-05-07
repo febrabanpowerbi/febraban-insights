@@ -3,83 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Febraban Power BI</title>
+  <title>FEBRABAN POWER BI</title>
   <style>
     body {
-      background-color: #ffffff;
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      color: black;
-      text-align: center;
-    }
-
-    .container {
-      padding: 50px 20px;
-    }
-
-    .logo img {
-      max-width: 340px;
-      height: auto;
-      margin-bottom: 40px;
-    }
-
-    h1 {
-      font-size: 2.3em;
-      font-weight: bold;
-      margin-bottom: 80px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 150px;
-      flex-wrap: wrap;
-      margin-bottom: 60px;
-    }
-
-    .icon-button {
+      padding: 40px 20px;
+      font-family: Calibri, sans-serif;
+      background-color: white;
+      color: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      height: 80px;
+    }
+
+    .logo-text {
+      text-align: left;
+    }
+
+    .logo-text h1 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .logo-text span {
+      font-size: 1.1em;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 10px 0 60px 0;
+      font-weight: bold;
+    }
+
+    .painel-links {
+      display: flex;
+      justify-content: center;
+      gap: 120px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .painel {
+      text-align: center;
       text-decoration: none;
       color: black;
     }
 
-    .icon-button img {
-      width: 120px;
+    .painel img {
+      width: 90px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
-    .icon-button span {
+    .painel span {
+      display: block;
       font-size: 1.2em;
-      line-height: 1.5;
-      max-width: 260px;
+      line-height: 1.4;
     }
 
     footer {
-      position: fixed;
-      left: 20px;
-      bottom: 10px;
-      font-size: 0.85em;
-      color: black;
+      margin-top: 80px;
+      font-size: 0.9em;
+      color: #333;
+      width: 100%;
+      text-align: left;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-
-    <!-- Logotipo FEBRABAN -->
-    <div class="logo">
-      <img src="ccdd36e6-aaa0-4955-92d3-aa448bf9077d.png" alt="Logo Febraban" />
+  <!-- LOGO + NOME -->
+  <div class="logo">
+    <img src="Febraban-icon.png" alt="Logo Febraban">
+    <div class="logo-text">
+      <h1>FEBRABAN</h1>
+      <span>FEDERAÇÃO <br> BRASILEIRA <br> DE BANCOS</span>
     </div>
+  </div>
 
-    <!-- Título -->
-    <h1>POWER BI</h1>
+  <!-- TÍTULO -->
+  <h2>POWER BI</h2>
 
-    <!-- Botões com ícones -->
-    <div class="buttons">
-      <!-- Panorama -->
-      <a href="ocupacoes.html" class
+  <!-- ÍCONES COM LINKS -->
+  <div class="painel-links">
+    <a class="painel" href="ocupacoes.html">
+      <img src="icon-panorama.png.png" alt="Panorama RH, Jurídico e Sindical">
+      <span>Panorama de RH, Jurídico<br>Trabalhista e Sindical</span>
+    </a>
+
+    <a class="painel" href="estatisticas.html">
+      <img src="icon-estatisticas.png.png" alt="Estatísticas">
+      <span>Estatísticas</span>
+    </a>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    @Febraban 2025
+  </footer>
+
+</body>
+</html>
