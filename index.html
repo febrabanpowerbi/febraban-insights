@@ -7,52 +7,55 @@
   <style>
     body {
       background-color: #0c1d30;
-      font-family: 'Calibri', sans-serif;
+      font-family: calibre, sans-serif;
       margin: 0;
       padding: 0;
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
 
     h1 {
       font-size: 3.5em;
       font-weight: bold;
-      margin: 50px 0 10px 0;
+      margin: 0;
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: #ccc;
-      margin-bottom: 40px;
+      margin: 10px 0 40px 0;
     }
 
-    .icons {
+    .buttons {
       display: flex;
-      justify-content: center;
-      column-gap: 200px; /* espaçamento lateral */
       flex-wrap: wrap;
-      margin-bottom: 50px;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
     }
 
-    .icon-link {
-      text-align: center;
+    .icon-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-decoration: none;
       color: white;
-    }
-
-    .icon-link img {
-      width: 90px;
-      height: auto;
-      margin-bottom: 15px;
-    }
-
-    .icon-link span {
-      display: block;
       font-weight: bold;
-      font-size: 1em;
       max-width: 180px;
+    }
+
+    .icon-button img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .icon-button span {
+      text-align: center;
     }
 
     footer {
@@ -61,6 +64,7 @@
       bottom: 10px;
       font-size: 0.9em;
       color: #ccc;
+      text-align: left;
     }
   </style>
 </head>
@@ -69,18 +73,23 @@
   <h1>FEBRABAN POWER BI</h1>
   <p>Maio de 2025</p>
 
-  <div class="icons">
-    <a class="icon-link" href="ocupacoes.html">
-      <img src="panorama-icon.png" alt="Panorama RH, Jurídico e Sindical">
+  <div class="buttons">
+    <!-- Botão 1 -->
+    <a href="ocupacoes.html" class="icon-button">
+      <img src="panorama-icon.png" alt="Panorama RH" />
       <span>Panorama RH, Jurídico e Sindical</span>
     </a>
-    <a class="icon-link" href="estatisticas.html">
-      <img src="estatisticas-icon.png" alt="Estatísticas">
+
+    <!-- Botão 2 -->
+    <a href="estatisticas.html" class="icon-button">
+      <img src="estatisticas-icon.png.png" alt="Estatísticas" />
       <span>Estatísticas</span>
     </a>
   </div>
 
-  <footer>@ 2025 Febraban</footer>
+  <footer>
+    @ 2025 Febraban
+  </footer>
 
 </body>
 </html>
