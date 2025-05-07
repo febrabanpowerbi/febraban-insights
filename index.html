@@ -7,55 +7,56 @@
   <style>
     body {
       background-color: #0c1d30;
-      font-family: calibre, sans-serif;
+      font-family: 'Calibri', sans-serif;
       margin: 0;
       padding: 0;
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
     }
 
     h1 {
-      font-size: 3.5em;
+      font-size: 3.3em; /* Reduzido conforme pedido */
       font-weight: bold;
-      margin: 0;
+      margin: 50px 0 10px 0;
+      font-family: 'Calibri', sans-serif;
     }
 
     p {
       font-size: 1.1em;
       color: #ccc;
-      margin: 10px 0 40px 0;
+      margin-bottom: 40px;
     }
 
-    .buttons {
+    .icons {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 40px;
-      margin-top: 20px;
+      gap: 150px; /* espaçamento lateral */
+      flex-wrap: wrap;
+      margin-bottom: 50px;
     }
 
-    .icon-button {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .icon-link {
+      text-align: center;
       text-decoration: none;
       color: white;
-      font-weight: bold;
-      max-width: 180px;
     }
 
-    .icon-button img {
-      width: 100px;
+    .icon-link img {
+      width: 90px;
       height: auto;
       margin-bottom: 10px;
     }
 
-    .icon-button span {
-      text-align: center;
+    .icon-link span {
+      display: block;
+      font-weight: bold;
+      font-size: 1em;
+      max-width: 200px;
+      white-space: nowrap;      /* Força em linha única */
+      overflow: hidden;          /* Esconde quebra se estourar */
+      text-overflow: ellipsis;   /* Adiciona "..." se for necessário */
     }
 
     footer {
@@ -64,7 +65,6 @@
       bottom: 10px;
       font-size: 0.9em;
       color: #ccc;
-      text-align: left;
     }
   </style>
 </head>
@@ -73,23 +73,18 @@
   <h1>FEBRABAN POWER BI</h1>
   <p>Maio de 2025</p>
 
-  <div class="buttons">
-    <!-- Botão 1 -->
-    <a href="ocupacoes.html" class="icon-button">
-      <img src="panorama-icon.png" alt="Panorama RH" />
+  <div class="icons">
+    <a class="icon-link" href="ocupacoes.html">
+      <img src="panorama-icon.png" alt="Panorama RH, Jurídico e Sindical">
       <span>Panorama RH, Jurídico e Sindical</span>
     </a>
-
-    <!-- Botão 2 -->
-    <a href="estatisticas.html" class="icon-button">
-      <img src="estatisticas-icon.png.png" alt="Estatísticas" />
+    <a class="icon-link" href="estatisticas.html">
+      <img src="estatisticas-icon.png" alt="Estatísticas">
       <span>Estatísticas</span>
     </a>
   </div>
 
-  <footer>
-    @ 2025 Febraban
-  </footer>
+  <footer>@ 2025 Febraban</footer>
 
 </body>
 </html>
