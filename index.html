@@ -3,93 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FEBRABAN Power BI</title>
+  <title>Febraban Power BI</title>
   <style>
     body {
-      background-color: #0c1d30;
-      color: white;
-      font-family: Calibri, sans-serif;
-      text-align: center;
       margin: 0;
-      padding: 0;
-    }
-
-    .logo-container {
-      margin-top: 60px;
-    }
-
-    .logo-container img {
-      width: 420px;
-    }
-
-    .titulo {
-      font-size: 2em;
-      margin: 20px 0 60px 0;
-      font-weight: bold;
-    }
-
-    .cards {
+      background-color: #0c1d30;
+      font-family: Calibri, Arial, sans-serif;
+      color: white;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      gap: 100px;
-      margin-bottom: 80px;
-      flex-wrap: wrap;
+      min-height: 100vh;
     }
 
-    .card {
-      width: 280px;
+    .logo img {
+      width: 420px; /* Tamanho proporcional à altura de 119px */
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin: 15px 0 40px 0;
+    }
+
+    .painel {
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    .painel-item {
       text-align: center;
     }
 
-    .card img {
-      width: 120px;
-      margin-bottom: 20px;
+    .painel-item img {
+      width: 120px; /* Ícones entre 110–128px */
+      height: auto;
+      margin-bottom: 15px;
     }
 
-    .card p {
-      font-size: 1.2em;
-      line-height: 1.4em;
-      font-weight: normal;
-      color: #ffffff;
+    .painel-item a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      display: block;
+      max-width: 240px;
     }
 
     footer {
       position: absolute;
-      left: 20px;
       bottom: 10px;
-      font-size: 0.85em;
+      left: 20px;
+      font-size: 14px;
       color: #ccc;
     }
   </style>
 </head>
 <body>
 
-  <!-- LOGO FEBRABAN -->
-  <div class="logo-container">
-    <img src="logo-febraban.png" alt="Logo Febraban">
+  <div class="logo">
+    <img src="logo-febraban.png" alt="Logo Febraban" />
   </div>
 
-  <!-- TÍTULO -->
-  <div class="titulo">POWER BI</div>
+  <h2>Maio de 2025</h2>
 
-  <!-- ÍCONES E LINKS -->
-  <div class="cards">
-    <div class="card">
+  <div class="painel">
+    <div class="painel-item">
       <a href="ocupacoes.html">
-        <img src="icon-panorama.png" alt="Panorama RH">
-        <p>Panorama de RH, Jurídico<br>Trabalhista e Sindical</p>
+        <img src="icon-panorama.png" alt="Panorama RH" />
+        Panorama de RH, Jurídico<br />
+        Trabalhista e Sindical
       </a>
     </div>
-    <div class="card">
+    <div class="painel-item">
       <a href="estatisticas.html">
-        <img src="icon-estatisticas.png" alt="Estatísticas">
-        <p>Estatísticas</p>
+        <img src="icon-estatisticas.png" alt="Estatísticas" />
+        Estatísticas
       </a>
     </div>
   </div>
 
-  <!-- RODAPÉ -->
-  <footer>@Febraban 2025</footer>
+  <footer>
+    @Febraban 2025
+  </footer>
 
 </body>
 </html>
