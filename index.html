@@ -2,93 +2,104 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Febraban Power BI</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
       background-color: #0c1d30;
-      font-family: Calibri, Arial, sans-serif;
       color: white;
+      font-family: Calibri, Arial, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       min-height: 100vh;
+      position: relative;
     }
 
-    .logo img {
-      width: 420px; /* Tamanho proporcional à altura de 119px */
-      margin-top: 50px;
-    }
-
-    h2 {
-      font-size: 28px;
-      font-weight: normal;
-      margin: 15px 0 40px 0;
-    }
-
-    .painel {
-      display: flex;
-      gap: 100px;
-      justify-content: center;
-      margin-bottom: 60px;
-    }
-
-    .painel-item {
+    .logo {
+      margin-top: 60px;
       text-align: center;
     }
 
-    .painel-item img {
-      width: 120px; /* Ícones entre 110–128px */
+    .logo img {
+      width: 500px;
       height: auto;
-      margin-bottom: 15px;
     }
 
-    .painel-item a {
+    .subtitle {
+      font-size: 28px;
+      margin-top: 10px;
+      margin-bottom: 80px;
+      text-align: center;
+    }
+
+    .panels {
+      display: flex;
+      justify-content: center;
+      gap: 120px;
+      margin-bottom: 60px;
+    }
+
+    .panel {
+      text-align: center;
+      max-width: 260px;
+    }
+
+    .panel img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 16px;
+    }
+
+    .panel a {
       text-decoration: none;
       color: white;
       font-size: 18px;
+      line-height: 1.4;
       display: block;
-      max-width: 240px;
     }
 
     footer {
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
       left: 20px;
       font-size: 14px;
       color: #ccc;
+    }
+
+    @media (max-width: 700px) {
+      .panels {
+        flex-direction: column;
+        gap: 50px;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="logo">
-    <img src="logo-febraban.png" alt="Logo Febraban" />
+    <img src="logo-febraban.png" alt="Logo Febraban"/>
+    <div class="subtitle">Maio de 2025</div>
   </div>
 
-  <h2>Maio de 2025</h2>
-
-  <div class="painel">
-    <div class="painel-item">
+  <div class="panels">
+    <div class="panel">
       <a href="ocupacoes.html">
-        <img src="icon-panorama.png" alt="Panorama RH" />
-        Panorama de RH, Jurídico<br />
-        Trabalhista e Sindical
+        <img src="icon-panorama.png" alt="Ícone Panorama"/>
+        Panorama de RH, Jurídico<br/>Trabalhista e Sindical
       </a>
     </div>
-    <div class="painel-item">
+    <div class="panel">
       <a href="estatisticas.html">
-        <img src="icon-estatisticas.png" alt="Estatísticas" />
+        <img src="icon-estatisticas.png" alt="Ícone Estatísticas"/>
         Estatísticas
       </a>
     </div>
   </div>
 
-  <footer>
-    @Febraban 2025
-  </footer>
+  <footer>@Febraban 2025</footer>
 
 </body>
 </html>
