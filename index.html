@@ -32,12 +32,27 @@
 
     .buttons {
       display: flex;
-      gap: 20px;
+      gap: 50px;
       flex-wrap: wrap;
       justify-content: center;
+      margin-top: 20px;
     }
 
-    .buttons a {
+    .icon-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    .icon-button img {
+      width: 90px;
+      height: auto;
+      margin-bottom: 8px;
+    }
+
+    .text-button {
       background-color: #d3d3d3;
       color: black;
       text-decoration: none;
@@ -45,13 +60,7 @@
       border-radius: 6px;
       font-weight: bold;
       text-align: center;
-      min-width: 300px;
-    }
-
-    .buttons img {
-      width: 100px;
-      height: auto;
-      border-radius: 6px;
+      min-width: 250px;
     }
 
     footer {
@@ -70,13 +79,14 @@
   <p>MAIO 2025</p>
 
   <div class="buttons">
-    <!-- Imagem clicável -->
-    <a href="ocupacoes.html" title="Panorama RH, Jurídico e Sindical">
-      <img src="panorama-icon.png" alt="Panorama RH, Jurídico e Sindical" />
+    <!-- Botão com ícone -->
+    <a href="ocupacoes.html" class="icon-button">
+      <img src="panorama-icon.png" alt="Panorama RH, Jurídico e Sindical">
+      <span><strong>Panorama RH, Jurídico e Sindical</strong></span>
     </a>
 
-    <!-- Botão normal -->
-    <a href="estatisticas.html">Estatísticas</a>
+    <!-- Botão texto normal -->
+    <a href="estatisticas.html" class="text-button">Estatísticas</a>
   </div>
 
   <footer>
