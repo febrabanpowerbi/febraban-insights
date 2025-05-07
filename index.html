@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Febraban Power BI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #0c1d30;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
       color: white;
@@ -16,25 +17,27 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+      text-align: center;
     }
 
     h1 {
-      font-size: 3.5em;
-      font-weight: bold;
+      font-size: 4em;
+      font-weight: 700;
+      letter-spacing: 1px;
       margin: 0;
     }
 
     p {
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: #ccc;
-      margin: 10px 0 40px 0;
+      margin: 12px 0 50px 0;
     }
 
     .buttons {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 40px;
+      gap: 80px; /* Aumenta o espaçamento entre os ícones */
       margin-top: 20px;
     }
 
@@ -45,17 +48,19 @@
       text-decoration: none;
       color: white;
       font-weight: bold;
-      max-width: 180px;
+      width: 180px;
     }
 
     .icon-button img {
-      width: 100px;
+      width: 110px;
       height: auto;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .icon-button span {
       text-align: center;
+      font-size: 0.95em;
+      line-height: 1.4;
     }
 
     footer {
@@ -64,7 +69,6 @@
       bottom: 10px;
       font-size: 0.9em;
       color: #ccc;
-      text-align: left;
     }
   </style>
 </head>
@@ -82,7 +86,7 @@
 
     <!-- Botão 2 -->
     <a href="estatisticas.html" class="icon-button">
-      <img src="estatisticas-icon.png.png" alt="Estatísticas" />
+      <img src="estatisticas-icon.png" alt="Estatísticas" />
       <span>Estatísticas</span>
     </a>
   </div>
