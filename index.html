@@ -11,36 +11,39 @@
       margin: 0;
       padding: 0;
       color: white;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
 
     h1 {
-      font-size: 3.3em; /* Reduzido conforme pedido */
+      font-size: 3.3em;
       font-weight: bold;
-      margin: 50px 0 10px 0;
+      margin: 0;
       font-family: 'Calibri', sans-serif;
     }
 
     p {
       font-size: 1.1em;
       color: #ccc;
-      margin-bottom: 40px;
+      margin: 10px 0 40px 0;
     }
 
     .icons {
       display: flex;
       justify-content: center;
-      gap: 150px; /* espaçamento lateral */
+      gap: 100px;
       flex-wrap: wrap;
-      margin-bottom: 50px;
+      margin-top: 20px;
     }
 
     .icon-link {
       text-align: center;
       text-decoration: none;
       color: white;
+      max-width: 180px;
     }
 
     .icon-link img {
@@ -53,10 +56,8 @@
       display: block;
       font-weight: bold;
       font-size: 1em;
-      max-width: 200px;
-      white-space: nowrap;      /* Força em linha única */
-      overflow: hidden;          /* Esconde quebra se estourar */
-      text-overflow: ellipsis;   /* Adiciona "..." se for necessário */
+      word-wrap: break-word;
+      white-space: normal; /* permite quebra */
     }
 
     footer {
