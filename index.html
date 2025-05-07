@@ -11,28 +11,33 @@
       margin: 0;
       padding: 0;
       color: black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       text-align: center;
     }
 
+    .container {
+      padding: 50px 20px;
+    }
+
     .logo {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      max-width: 320px;
+      height: auto;
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 2.3em;
       font-weight: bold;
-      margin: 10px 0 50px 0;
+      margin: 0 0 80px;
     }
 
     .buttons {
       display: flex;
       justify-content: center;
-      gap: 120px;
+      gap: 150px;
+      flex-wrap: wrap;
       margin-bottom: 50px;
     }
 
@@ -45,20 +50,19 @@
     }
 
     .icon-button img {
-      width: 110px;
+      width: 120px;
       height: auto;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .icon-button span {
-      text-align: center;
-      font-size: 1.1em;
+      font-size: 1.2em;
       line-height: 1.5;
-      max-width: 220px;
+      max-width: 250px;
     }
 
     footer {
-      position: fixed;
+      position: absolute;
       left: 20px;
       bottom: 10px;
       font-size: 0.85em;
@@ -68,32 +72,23 @@
 </head>
 <body>
 
-  <!-- Logotipo FEBRABAN -->
-  <div class="logo">
-    <img src="Febraban-icon.png" alt="Logo Febraban" width="300" />
-  </div>
+  <div class="container">
 
-  <!-- Título -->
-  <h1>POWER BI</h1>
+    <!-- Logotipo FEBRABAN -->
+    <div class="logo">
+      <img src="3436b03f-1cda-41b2-ba42-d0b1c3dcc26a.png" alt="Logo Febraban" />
+    </div>
 
-  <!-- Botões -->
-  <div class="buttons">
-    <!-- Botão Panorama -->
-    <a href="ocupacoes.html" class="icon-button">
-      <img src="icon-panorama.png.png" alt="Panorama RH" />
-      <span>Panorama de RH, Jurídico<br>Trabalhista e Sindical</span>
-    </a>
+    <!-- Título -->
+    <h1>POWER BI</h1>
 
-    <!-- Botão Estatísticas -->
-    <a href="estatisticas.html" class="icon-button">
-      <img src="icon-estatisticas.png.png" alt="Estatísticas" />
-      <span>Estatísticas</span>
-    </a>
-  </div>
+    <!-- Botões com ícones -->
+    <div class="buttons">
+      <!-- Panorama -->
+      <a href="ocupacoes.html" class="icon-button">
+        <img src="448cf64c-02b3-413e-9d3d-502fb0de3dde.png" alt="Panorama RH" />
+        <span>Panorama de RH, Jurídico<br>Trabalhista e Sindical</span>
+      </a>
 
-  <footer>
-    @Febraban 2025
-  </footer>
-
-</body>
-</html>
+      <!-- Estatísticas -->
+      <a href="estatisticas.html" class
