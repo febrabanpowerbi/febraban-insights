@@ -15,7 +15,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     h1 {
@@ -32,9 +32,9 @@
 
     .buttons {
       display: flex;
-      gap: 50px;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 40px;
       margin-top: 20px;
     }
 
@@ -44,23 +44,18 @@
       align-items: center;
       text-decoration: none;
       color: white;
+      font-weight: bold;
+      max-width: 180px;
     }
 
     .icon-button img {
-      width: 90px;
+      width: 100px;
       height: auto;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
-    .text-button {
-      background-color: #d3d3d3;
-      color: black;
-      text-decoration: none;
-      padding: 14px 20px;
-      border-radius: 6px;
-      font-weight: bold;
+    .icon-button span {
       text-align: center;
-      min-width: 250px;
     }
 
     footer {
@@ -79,14 +74,17 @@
   <p>MAIO 2025</p>
 
   <div class="buttons">
-    <!-- Botão com ícone -->
+    <!-- Botão 1 -->
     <a href="ocupacoes.html" class="icon-button">
-      <img src="panorama-icon.png" alt="Panorama RH, Jurídico e Sindical">
-      <span><strong>Panorama RH, Jurídico e Sindical</strong></span>
+      <img src="panorama-icon.png" alt="Panorama RH" />
+      <span>Panorama RH, Jurídico e Sindical</span>
     </a>
 
-    <!-- Botão texto normal -->
-    <a href="estatisticas.html" class="text-button">Estatísticas</a>
+    <!-- Botão 2 -->
+    <a href="estatisticas.html" class="icon-button">
+      <img src="estatisticas-icon.png.png" alt="Estatísticas" />
+      <span>Estatísticas</span>
+    </a>
   </div>
 
   <footer>
