@@ -1,143 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Relatórios - Panorama</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatório - Panorama</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #011627;
+      background-color: #021627;
       color: white;
-      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
     }
 
-    .capa {
-      width: 100%;
-      display: block;
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
     }
 
-    .topo {
-      background-color: #011627;
-      padding: 10px 20px;
+    .top-link {
+      text-align: left;
+      padding: 10px;
+      background-color: #00101e;
     }
 
-    .topo a {
-      color: #66ccff;
+    .top-link a {
+      color: #90cdf4;
       text-decoration: none;
-      font-size: 16px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px 0;
+    }
+
+    .titulo {
+      font-size: 2.2em;
+      margin-top: 10px;
+    }
+
+    .subtitulo {
+      font-size: 1.4em;
+      margin-bottom: 10px;
     }
 
     .sumario {
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 0 20px;
+      background-color: #03294d;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto 40px;
     }
 
     .sumario a {
       display: block;
-      padding: 12px;
-      margin-bottom: 10px;
-      background-color: #022b45;
-      color: white;
+      color: #90cdf4;
       text-decoration: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #053c63;
       border-radius: 5px;
-      transition: background-color 0.3s;
     }
 
     .sumario a:hover {
-      background-color: #044766;
+      background-color: #075382;
     }
 
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+    .relatorio {
+      margin-bottom: 60px;
     }
 
-    section h2 {
-      margin-bottom: 10px;
+    .relatorio h2 {
+      font-size: 1.5em;
       color: #ffffff;
     }
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      background: white;
+    .relatorio p {
+      font-size: 1em;
+      color: #dcdcdc;
     }
 
-    footer {
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      color: #ccc;
-      align-items: center;
+    .voltar {
+      text-align: right;
+      margin: 60px 10px 20px;
     }
 
-    .voltar-sumario-footer {
-      font-size: 14px;
-    }
-
-    .voltar-sumario-footer a {
-      color: #66ccff;
+    .voltar a {
+      color: #90cdf4;
       text-decoration: none;
+    }
+
+    .voltar a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
-<body>
 
-  <!-- Voltar -->
-  <div class="topo">
+<body>
+  <div class="top-link">
     <a href="index.html">← Voltar à Página Inicial</a>
   </div>
 
-  <!-- Capa -->
-  <img src="capa-panorama.png" alt="Capa Panorama" class="capa">
+  <div class="container">
+    <div class="header">
+      <img src="capa-panorama.png" alt="Capa Panorama" style="width: 100%; max-width: 600px;" />
+      <h1 class="titulo">Panorama de RH, Jurídico Trabalhista e Sindical</h1>
+      <p class="subtitulo">Maio 2025</p>
+    </div>
 
-  <!-- Sumário com links -->
-  <div class="sumario" id="sumario">
-    <a href="#resumo">Panorama de RH, Jurídico Trabalhista e Sindical - Resumo</a>
-    <a href="#ranking">Ranking Quantidade de Clientes</a>
-    <a href="#empregados">Empregados e SM</a>
-    <a href="#jt">JT</a>
-    <a href="#relacoes">Relações Sindicais</a>
-  </div>
+    <div class="sumario" id="sumario">
+      <a href="#resumo">Panorama - Resumo</a>
+      <a href="#ranking">Ranking de Clientes</a>
+      <a href="#empregados">Empregados e SM</a>
+      <a href="#jt">JT</a>
+      <a href="#sindicais">Relações Sindicais</a>
+    </div>
 
-  <!-- Relatórios -->
-  <section id="resumo">
-    <h2>Resumo</h2>
-    <p>Em construção...</p>
-  </section>
+    <div class="relatorio" id="resumo">
+      <h2>Resumo</h2>
+      <p>Em construção...</p>
+    </div>
 
-  <section id="ranking">
-    <h2>Ranking Quantidade de Clientes</h2>
-    <p>Em construção...</p>
-  </section>
+    <div class="relatorio" id="ranking">
+      <h2>Ranking de Clientes</h2>
+      <p>Em construção...</p>
+    </div>
 
-  <section id="empregados">
-    <h2>Empregados e SM</h2>
-    <p>Em construção...</p>
-  </section>
+    <div class="relatorio" id="empregados">
+      <h2>Empregados e SM</h2>
+      <p>Em construção...</p>
+    </div>
 
-  <section id="jt">
-    <h2>JT</h2>
-    <p>Em construção...</p>
-  </section>
+    <div class="relatorio" id="jt">
+      <h2>JT</h2>
+      <p>Em construção...</p>
+    </div>
 
-  <section id="relacoes">
-    <h2>Relações Sindicais</h2>
-    <p>Em construção...</p>
-  </section>
+    <div class="relatorio" id="sindicais">
+      <h2>Relações Sindicais</h2>
+      <p>Em construção...</p>
+    </div>
 
-  <!-- Rodapé -->
-  <footer>
-    <div>@ Febraban 2025 - Portal de Dashboards Estratégicos</div>
-    <div class="voltar-sumario-footer">
+    <div class="voltar">
       <a href="#sumario">↑ Voltar ao Sumário</a>
     </div>
-  </footer>
-
+  </div>
 </body>
+
 </html>
