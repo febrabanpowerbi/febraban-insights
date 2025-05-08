@@ -1,77 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Relatórios - Estatísticas</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #011627;
-            color: white;
-        }
-        .capa {
-            width: 100%;
-            max-height: 500px;
-        }
-        .sumario {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .sumario h2 {
-            color: #66ccff;
-            margin-bottom: 10px;
-        }
-        .sumario ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .sumario li {
-            margin-bottom: 8px;
-        }
-        .sumario a {
-            color: #66ccff;
-            text-decoration: none;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            background: white;
-        }
-        footer {
-            padding: 30px;
-            font-size: 12px;
-            color: #ccc;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Relatórios - Estatísticas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #011627;
+      color: white;
+    }
+
+    .capa {
+      width: 100%;
+      display: block;
+    }
+
+    .topo {
+      background-color: #011627;
+      padding: 10px 20px;
+    }
+
+    .topo a {
+      color: #66ccff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      background: white;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: left;
+      font-size: 12px;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
 
-    <img src="img/capa-estatisticas.png" alt="Capa Estatísticas" class="capa">
+  <!-- Botão de volta -->
+  <div class="topo">
+    <a href="index.html">← Voltar à Página Inicial</a>
+  </div>
 
-    <div class="sumario">
-        <h2>Sumário</h2>
-        <ul>
-            <li><a href="<iframe title="Tecnologia" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYWJlMzM0YWUtZGI2MC00ZTQ4LThhZWItNDYzZmM3NDFlNDdkIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" frameborder="0" allowFullScreen="true"></iframe>">Ocupações em Tecnologia no Setor Bancário</a></li>
-            <!-- Adicione mais links aqui -->
-        </ul>
-    </div>
+  <!-- Capa feita no PowerPoint -->
+  <img src="capa-estatisticas.png" alt="Capa Estatísticas" class="capa">
 
-    <section id="tecnologia">
-        <h2>Ocupações em Tecnologia no Setor Bancário</h2>
-        <iframe src="https://app.powerbi.com/view?r=SEU_LINK_DO_PBI_AQUI"></iframe>
-    </section>
+  <!-- Seções para cada item listado na capa -->
+  <section id="tecnologia">
+    <h2>Ocupações em Tecnologia no Setor Bancário</h2>
+    <iframe src="https://app.powerbi.com/view?r=SEU_LINK_PUBLICADO_DO_PBI"></iframe>
+  </section>
 
-    <footer>
-        @ Febraban 2025 - Portal de Dashboards Estratégicos
-    </footer>
+  <section id="encontro-rh">
+    <h2>34° Encontro de RH e Trabalhista do Setor Bancário</h2>
+    <p>Em construção...</p>
+  </section>
 
+  <section id="construcao1">
+    <h2>Em construção</h2>
+    <p>Conteúdo em desenvolvimento...</p>
+  </section>
+
+  <section id="construcao2">
+    <h2>Em construção</h2>
+    <p>Conteúdo em desenvolvimento...</p>
+  </section>
+
+  <footer>
+    @ Febraban 2025 - Portal de Dashboards Estratégicos
+  </footer>
 </body>
 </html>
