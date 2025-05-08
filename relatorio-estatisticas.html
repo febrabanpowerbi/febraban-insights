@@ -2,80 +2,82 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Estatísticas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estatísticas - Maio 2025</title>
   <style>
     body {
-      background-color: #031627;
       font-family: Arial, sans-serif;
-      color: white;
+      background-color: #05182B;
+      color: #ffffff;
       margin: 0;
+      padding: 0;
     }
-    .top-bar {
-      background-color: #010d18;
-      padding: 5px 10px;
-      font-size: 14px;
-    }
-    .top-bar a {
-      color: #00aaff;
+    a {
+      color: #48C3EF;
       text-decoration: none;
     }
     h1, h2 {
       text-align: center;
-      margin: 20px 0 10px 0;
+      margin-top: 10px;
     }
-    .sumario {
+    #Sumário {
       text-align: center;
-      margin: 30px 0;
+      margin: 20px;
     }
-    .sumario a {
+    #Sumário a {
       display: block;
-      margin: 10px auto;
       padding: 10px;
-      background-color: #0d3b5c;
-      width: 70%;
-      color: white;
-      text-decoration: none;
+      margin: 5px auto;
+      max-width: 800px;
+      background-color: #0B3C5D;
       border-radius: 5px;
     }
     section {
-      padding: 30px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     h3 {
-      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
     }
     footer {
       text-align: right;
       padding: 20px;
-    }
-    footer a {
-      color: #00aaff;
-      text-decoration: none;
+      font-size: 14px;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-
-  <div class="top-bar">
+  <div>
     <a href="index.html">← Voltar à Página Inicial</a>
   </div>
 
   <h1>Estatísticas</h1>
   <h2>Maio 2025</h2>
 
-  <div class="sumario" id="sumario">
+  <div class="Sumário" id="Sumário">
     <a href="#tecnologia">Ocupações em Tecnologia no Setor Bancário</a>
-    <a href="#encontro">34° Encontro de RH e Trabalhista</a>
+    <a href="#encontro">34º Encontro de RH e Trabalhista</a>
     <a href="#relatorio3">Relatório 3 - Em Construção</a>
     <a href="#relatorio4">Relatório 4 - Em Construção</a>
   </div>
 
   <section id="tecnologia">
     <h3>Ocupações em Tecnologia no Setor Bancário</h3>
-    <iframe title="Tecnologia" width="600" height="400" src="URL_DO_SEU_RELATORIO" frameborder="0" allowFullScreen="true"></iframe>
+    <iframe title="Tecnologia" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiYWJlMzM0YWUtZGI2MC00ZTQ4LThhZWItNDYzZmM3NDFlNDdkIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" 
+            allowFullScreen="true">
+    </iframe>
   </section>
 
   <section id="encontro">
-    <h3>34° Encontro de RH e Trabalhista do Setor Bancário</h3>
+    <h3>34º Encontro de RH e Trabalhista do Setor Bancário</h3>
     <p>Em construção...</p>
   </section>
 
@@ -90,8 +92,7 @@
   </section>
 
   <footer>
-    <a href="#sumario">↑ Voltar ao Sumário</a>
+    ↑ <a href="#Sumário">Voltar ao Sumário</a>
   </footer>
-
 </body>
 </html>
