@@ -67,21 +67,22 @@
       background: white;
     }
 
-    .voltar-index {
-      margin-top: 10px;
-    }
-
-    .voltar-index a {
-      font-size: 14px;
-      color: #66ccff;
-      text-decoration: none;
-    }
-
     footer {
       padding: 20px;
-      text-align: left;
+      display: flex;
+      justify-content: space-between;
       font-size: 12px;
       color: #ccc;
+      align-items: center;
+    }
+
+    .voltar-sumario-footer {
+      font-size: 14px;
+    }
+
+    .voltar-sumario-footer a {
+      color: #66ccff;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -92,10 +93,10 @@
     <a href="index.html">← Voltar à Página Inicial</a>
   </div>
 
-  <!-- Capa do PowerPoint -->
+  <!-- Capa -->
   <img src="capa-panorama.png" alt="Capa Panorama" class="capa">
 
-  <!-- Sumário com links clicáveis -->
+  <!-- Sumário com links -->
   <div class="sumario" id="sumario">
     <a href="#resumo">Panorama de RH, Jurídico Trabalhista e Sindical - Resumo</a>
     <a href="#ranking">Ranking Quantidade de Clientes</a>
@@ -108,35 +109,34 @@
   <section id="resumo">
     <h2>Resumo</h2>
     <p>Em construção...</p>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <section id="ranking">
     <h2>Ranking Quantidade de Clientes</h2>
     <p>Em construção...</p>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <section id="empregados">
     <h2>Empregados e SM</h2>
     <p>Em construção...</p>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <section id="jt">
     <h2>JT</h2>
     <p>Em construção...</p>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <section id="relacoes">
     <h2>Relações Sindicais</h2>
     <p>Em construção...</p>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
+  <!-- Rodapé -->
   <footer>
-    @ Febraban 2025 - Portal de Dashboards Estratégicos
+    <div>@ Febraban 2025 - Portal de Dashboards Estratégicos</div>
+    <div class="voltar-sumario-footer">
+      <a href="#sumario">↑ Voltar ao Sumário</a>
+    </div>
   </footer>
 
 </body>
