@@ -9,6 +9,7 @@
       font-family: Arial, sans-serif;
       background-color: #011627;
       color: white;
+      scroll-behavior: smooth;
     }
 
     .capa {
@@ -25,6 +26,27 @@
       color: #66ccff;
       text-decoration: none;
       font-size: 16px;
+    }
+
+    .titulo-links {
+      max-width: 1000px;
+      margin: 30px auto 10px;
+      padding: 0 20px;
+    }
+
+    .titulo-links a {
+      display: block;
+      padding: 12px;
+      margin-bottom: 10px;
+      background-color: #022b45;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .titulo-links a:hover {
+      background-color: #044766;
     }
 
     section {
@@ -55,42 +77,52 @@
 </head>
 <body>
 
-  <!-- Botão de volta -->
+  <!-- Voltar -->
   <div class="topo">
     <a href="index.html">← Voltar à Página Inicial</a>
   </div>
 
-  <!-- Capa feita no PowerPoint -->
+  <!-- Capa do PowerPoint -->
   <img src="capa-panorama.png" alt="Capa Panorama" class="capa">
 
-  <!-- Seções para cada relatório listado na capa -->
+  <!-- Títulos clicáveis abaixo da capa -->
+  <div class="titulo-links">
+    <a href="#resumo">Panorama de RH, Jurídico Trabalhista e Sindical - Resumo</a>
+    <a href="#ranking">Panorama de RH, Jurídico Trabalhista e Sindical – Ranking Quantidade de Clientes</a>
+    <a href="#empregados">Panorama de RH, Jurídico Trabalhista e Sindical – Empregados e SM</a>
+    <a href="#jt">Panorama de RH, Jurídico Trabalhista e Sindical – JT</a>
+    <a href="#sindicais">Panorama de RH, Jurídico Trabalhista e Sindical – Relações Sindicais</a>
+  </div>
+
+  <!-- Seções dos relatórios -->
   <section id="resumo">
-    <h2>Panorama de RH, Jurídico Trabalhista e Sindical - Resumo</h2>
+    <h2>Resumo</h2>
     <p>Em construção...</p>
   </section>
 
   <section id="ranking">
-    <h2>Panorama de RH, Jurídico Trabalhista e Sindical – Ranking Quantidade de Clientes</h2>
+    <h2>Ranking Quantidade de Clientes</h2>
     <p>Em construção...</p>
   </section>
 
   <section id="empregados">
-    <h2>Panorama de RH, Jurídico Trabalhista e Sindical – Empregados e SM</h2>
+    <h2>Empregados e SM</h2>
     <p>Em construção...</p>
   </section>
 
   <section id="jt">
-    <h2>Panorama de RH, Jurídico Trabalhista e Sindical – JT</h2>
+    <h2>Panorama Trabalhista - JT</h2>
     <p>Em construção...</p>
   </section>
 
   <section id="sindicais">
-    <h2>Panorama de RH, Jurídico Trabalhista e Sindical – Relações Sindicais</h2>
+    <h2>Relações Sindicais</h2>
     <p>Em construção...</p>
   </section>
 
   <footer>
     @ Febraban 2025 - Portal de Dashboards Estratégicos
   </footer>
+
 </body>
 </html>
