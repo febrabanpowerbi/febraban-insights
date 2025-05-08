@@ -67,21 +67,22 @@
       background: white;
     }
 
-    .voltar-index {
-      margin-top: 10px;
-    }
-
-    .voltar-index a {
-      font-size: 14px;
-      color: #66ccff;
-      text-decoration: none;
-    }
-
     footer {
       padding: 20px;
-      text-align: left;
+      display: flex;
+      justify-content: space-between;
       font-size: 12px;
       color: #ccc;
+      align-items: center;
+    }
+
+    .voltar-sumario-footer {
+      font-size: 14px;
+    }
+
+    .voltar-sumario-footer a {
+      color: #66ccff;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -95,10 +96,10 @@
   <!-- Capa -->
   <img src="capa-estatisticas.png" alt="Capa Estatísticas" class="capa">
 
-  <!-- Sumário -->
+  <!-- Sumário com links -->
   <div class="sumario" id="sumario">
     <a href="#tecnologia">Ocupações em Tecnologia no Setor Bancário</a>
-    <a href="#encontro">34° Encontro de RH e Trabalhista</a>
+    <a href="#encontro-rh">34° Encontro de RH e Trabalhista do Setor Bancário</a>
     <a href="#relatorio3">Relatório 3 - Em Construção</a>
     <a href="#relatorio4">Relatório 4 - Em Construção</a>
   </div>
@@ -106,31 +107,27 @@
   <!-- Relatórios -->
   <section id="tecnologia">
     <h2>Ocupações em Tecnologia no Setor Bancário</h2>
-    <iframe title="Tecnologia" src="https://app.powerbi.com/view?r=eyJrIjoi..."></iframe>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
+    <!-- Substitua a linha abaixo pelo embed real do Power BI -->
+    <iframe title="Tecnologia" src="https://app.powerbi.com/view?r=SEU-LINK-AQUI" allowFullScreen="true"></iframe>
   </section>
 
-  <section id="encontro">
-    <h2>34° Encontro de RH e Trabalhista</h2>
+  <section id="encontro-rh">
+    <h2>34° Encontro de RH e Trabalhista do Setor Bancário</h2>
     <p>Em construção...</p>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <section id="relatorio3">
     <h2>Relatório 3</h2>
     <p>Em construção...</p>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <section id="relatorio4">
     <h2>Relatório 4</h2>
     <p>Em construção...</p>
-    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
+  <!-- Rodapé -->
   <footer>
-    @ Febraban 2025 - Portal de Dashboards Estratégicos
-  </footer>
-
-</body>
-</html>
+    <div>@ Febraban 2025 - Portal de Dashboards Estratégicos</div>
+    <div class="voltar-sumario-footer">
+      <a href="#sum
