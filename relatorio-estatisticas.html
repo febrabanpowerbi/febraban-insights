@@ -28,13 +28,13 @@
       font-size: 16px;
     }
 
-    .titulo-links {
+    .sumario {
       max-width: 1000px;
-      margin: 30px auto;
+      margin: 20px auto;
       padding: 0 20px;
     }
 
-    .titulo-links a {
+    .sumario a {
       display: block;
       padding: 12px;
       margin-bottom: 10px;
@@ -45,7 +45,7 @@
       transition: background-color 0.3s;
     }
 
-    .titulo-links a:hover {
+    .sumario a:hover {
       background-color: #044766;
     }
 
@@ -56,7 +56,7 @@
     }
 
     section h2 {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       color: #ffffff;
     }
 
@@ -65,6 +65,16 @@
       height: 600px;
       border: none;
       background: white;
+    }
+
+    .voltar-index {
+      margin-top: 10px;
+    }
+
+    .voltar-index a {
+      font-size: 14px;
+      color: #66ccff;
+      text-decoration: none;
     }
 
     footer {
@@ -82,13 +92,13 @@
     <a href="index.html">← Voltar à Página Inicial</a>
   </div>
 
-  <!-- Capa do PowerPoint -->
+  <!-- Capa -->
   <img src="capa-estatisticas.png" alt="Capa Estatísticas" class="capa">
 
-  <!-- Sumário com links clicáveis -->
-  <div class="titulo-links">
+  <!-- Sumário -->
+  <div class="sumario" id="sumario">
     <a href="#tecnologia">Ocupações em Tecnologia no Setor Bancário</a>
-    <a href="#encontro-rh">34º Encontro de RH e Trabalhista do Setor Bancário</a>
+    <a href="#encontro">34° Encontro de RH e Trabalhista</a>
     <a href="#relatorio3">Relatório 3 - Em Construção</a>
     <a href="#relatorio4">Relatório 4 - Em Construção</a>
   </div>
@@ -96,22 +106,26 @@
   <!-- Relatórios -->
   <section id="tecnologia">
     <h2>Ocupações em Tecnologia no Setor Bancário</h2>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiEXEMPLO-LINK-POWERBI" allowfullscreen></iframe>
+    <iframe title="Tecnologia" src="https://app.powerbi.com/view?r=eyJrIjoi..."></iframe>
+    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
-  <section id="encontro-rh">
-    <h2>34º Encontro de RH e Trabalhista do Setor Bancário</h2>
+  <section id="encontro">
+    <h2>34° Encontro de RH e Trabalhista</h2>
     <p>Em construção...</p>
+    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <section id="relatorio3">
     <h2>Relatório 3</h2>
     <p>Em construção...</p>
+    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <section id="relatorio4">
     <h2>Relatório 4</h2>
     <p>Em construção...</p>
+    <div class="voltar-index"><a href="#sumario">↑ Voltar ao Sumário</a></div>
   </section>
 
   <footer>
