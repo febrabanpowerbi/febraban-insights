@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Relatório Estatísticas</title>
+  <title>Estatísticas</title>
   <style>
     body {
-      margin: 0;
+      background-color: #031627;
       font-family: Arial, sans-serif;
-      background-color: #02172B;
-      color: #ffffff;
+      color: white;
+      margin: 0;
     }
     .top-bar {
-      background-color: #011120;
+      background-color: #010d18;
       padding: 5px 10px;
       font-size: 14px;
     }
@@ -19,107 +19,86 @@
       color: #00aaff;
       text-decoration: none;
     }
-    .logo-container {
-      background-color: white;
-      text-align: center;
-      padding: 30px 10px;
-    }
-    .logo-container img {
-      max-width: 350px;
-    }
-    .header {
-      text-align: center;
-      padding: 10px 0;
-    }
-    .header h1 {
-      font-size: 28px;
-      margin-bottom: 0;
-    }
-    .header h3 {
-      margin-top: 5px;
-      font-weight: normal;
-      color: #d0d0d0;
-    }
-    .summary {
-      text-align: center;
-      margin: 20px auto;
-      width: 60%;
-    }
-    .summary a {
+    .logo {
       display: block;
-      background-color: #0c2e47;
-      margin: 8px 0;
+      margin: 30px auto 10px auto;
+      max-width: 300px;
+    }
+    h1, h2 {
+      text-align: center;
+      margin: 5px 0;
+    }
+    .sumario {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .sumario a {
+      display: block;
+      margin: 10px auto;
       padding: 10px;
-      border-radius: 6px;
-      color: #ffffff;
+      background-color: #0d3b5c;
+      width: 70%;
+      color: white;
       text-decoration: none;
-      font-size: 15px;
+      border-radius: 5px;
     }
-    .summary a:hover {
-      background-color: #145077;
+    section {
+      padding: 30px;
     }
-    .report-section {
-      margin: 30px auto;
-      width: 80%;
+    h3 {
+      margin-top: 40px;
     }
-    .report-section h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    .back-to-top {
+    footer {
       text-align: right;
       padding: 20px;
     }
-    .back-to-top a {
+    footer a {
       color: #00aaff;
       text-decoration: none;
-      font-size: 14px;
     }
   </style>
 </head>
 <body>
+
   <div class="top-bar">
     <a href="index.html">← Voltar à Página Inicial</a>
   </div>
 
-  <div class="logo-container">
-    <img src="dc05736c-7b54-47c8-b897-c0d6431ba6e8.png" alt="FEBRABAN Logo" />
-  </div>
+  <img src="slide-febraban.png" alt="Logo FEBRABAN" class="logo" />
 
-  <div class="header" id="sumario">
-    <h1>Estatísticas</h1>
-    <h3>Maio 2025</h3>
-  </div>
+  <h1>Estatísticas</h1>
+  <h2>Maio 2025</h2>
 
-  <div class="summary">
+  <div class="sumario" id="sumario">
     <a href="#tecnologia">Ocupações em Tecnologia no Setor Bancário</a>
-    <a href="#encontro">34º Encontro de RH e Trabalhista</a>
+    <a href="#encontro">34° Encontro de RH e Trabalhista</a>
     <a href="#relatorio3">Relatório 3 - Em Construção</a>
     <a href="#relatorio4">Relatório 4 - Em Construção</a>
   </div>
 
-  <div class="report-section" id="tecnologia">
-    <h2>Ocupações em Tecnologia no Setor Bancário</h2>
+  <section id="tecnologia">
+    <h3>Ocupações em Tecnologia no Setor Bancário</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="report-section" id="encontro">
-    <h2>34º Encontro de RH e Trabalhista</h2>
+  <section id="encontro">
+    <h3>34° Encontro de RH e Trabalhista do Setor Bancário</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="report-section" id="relatorio3">
-    <h2>Relatório 3</h2>
+  <section id="relatorio3">
+    <h3>Relatório 3</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="report-section" id="relatorio4">
-    <h2>Relatório 4</h2>
+  <section id="relatorio4">
+    <h3>Relatório 4</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="back-to-top">
+  <footer>
     <a href="#sumario">↑ Voltar ao Sumário</a>
-  </div>
+  </footer>
+
 </body>
 </html>
