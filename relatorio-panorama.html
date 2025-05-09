@@ -2,93 +2,129 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Panorama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panorama de RH</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       background-color: #f2f2f2;
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
     }
-    a {
-      display: block;
-      padding: 10px;
+
+    .top-bar {
       background-color: white;
-      color: #003366;
+      padding: 10px;
+    }
+
+    .top-bar a {
       text-decoration: none;
+      color: #002147;
       font-weight: bold;
     }
-    h1, h2 {
-      text-align: center;
-      color: black;
-      margin: 10px 0;
+
+    .logo {
+      display: block;
+      margin: 20px auto 0;
+      width: 200px;
     }
-    .container {
-      text-align: center;
+
+    .menu {
       background-color: #f2f2f2;
-      padding: 20px 0;
-    }
-    .btn {
-      background-color: #003366;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      margin: 5px 0;
-      width: 60%;
-      border-radius: 5px;
-      font-size: 14px;
       text-align: center;
+      padding: 30px 0 10px;
+    }
+
+    .menu h1 {
+      color: #000;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .menu h2 {
+      color: #000;
+      margin: 5px 0 20px;
+    }
+
+    .menu a {
+      display: block;
+      width: 70%;
+      margin: 10px auto;
+      background-color: #0d2c5b;
+      color: white;
       text-decoration: none;
-      display: inline-block;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: bold;
     }
-    .section {
-      margin: 40px;
+
+    section {
+      margin: 40px 10%;
     }
+
     h3 {
       color: black;
+    }
+
+    footer {
+      text-align: right;
+      padding: 20px 5% 40px;
+    }
+
+    footer a {
+      color: #002147;
+      font-weight: bold;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">← Voltar à Página Inicial</a>
 
-  <div class="container">
-    <img src="capa-panorama.png" alt="Capa Panorama" width="90%">
+  <div class="top-bar">
+    <a href="index.html">← Voltar à Página Inicial</a>
   </div>
 
-  <div class="container">
+  <img class="logo" src="capa-panorama.png" alt="Logo FEBRABAN" />
+
+  <div class="menu" id="topo">
     <h1>Panorama de RH, Jurídico Trabalhista e Sindical</h1>
     <h2>Maio 2025</h2>
 
-    <a href="#resumo" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical - Resumo</a>
-    <a href="#clientes" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical – Ranking Quantidade de Clientes</a>
-    <a href="#empregados" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical – Empregados e SM</a>
-    <a href="#jt" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical – JT</a>
-    <a href="#sindicais" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical – Relações Sindicais</a>
+    <a href="#resumo">Panorama de RH, Jurídico Trabalhista e Sindical - Resumo</a>
+    <a href="#clientes">Panorama de RH, Jurídico Trabalhista e Sindical – Ranking Quantidade de Clientes</a>
+    <a href="#empregados">Panorama de RH, Jurídico Trabalhista e Sindical – Empregados e SM</a>
+    <a href="#jt">Panorama de RH, Jurídico Trabalhista e Sindical – JT</a>
+    <a href="#relacoes">Panorama de RH, Jurídico Trabalhista e Sindical – Relações Sindicais</a>
   </div>
 
-  <div class="section" id="resumo">
+  <section id="resumo">
     <h3>Resumo</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="section" id="clientes">
+  <section id="clientes">
     <h3>Ranking de Clientes</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="section" id="empregados">
+  <section id="empregados">
     <h3>Empregados e SM</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="section" id="jt">
+  <section id="jt">
     <h3>JT</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="section" id="sindicais">
+  <section id="relacoes">
     <h3>Relações Sindicais</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
+
+  <footer>
+    <a href="#topo">↑ Voltar ao Início</a>
+  </footer>
+
 </body>
 </html>
