@@ -1,103 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <title>Panorama de RH, Jurídico Trabalhista e Sindical</title>
+  <meta charset="UTF-8">
+  <title>Relatório Panorama</title>
   <style>
     body {
-      background-color: #031627;
-      font-family: Arial, sans-serif;
-      color: white;
       margin: 0;
+      background-color: #041E32;
+      font-family: Arial, sans-serif;
+      color: #fff;
     }
-    .top-bar {
-      background-color: #010d18;
-      padding: 5px 10px;
-      font-size: 14px;
-    }
-    .top-bar a {
-      color: #00aaff;
-      text-decoration: none;
-    }
-    h1, h2 {
+
+    header {
+      background-color: white;
       text-align: center;
-      margin: 20px 0 10px 0;
     }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .top-link {
+      background-color: #00101e;
+      padding: 10px 20px;
+    }
+
+    .top-link a {
+      color: #90cdf4;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .titulo {
+      text-align: center;
+      padding: 20px 20px 10px;
+    }
+
+    .titulo h1 {
+      margin: 10px 0 5px;
+      font-size: 28px;
+    }
+
+    .titulo h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
     .sumario {
-      text-align: center;
-      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto 40px;
+      width: 80%;
     }
+
     .sumario a {
-      display: block;
-      margin: 10px auto;
-      padding: 10px;
-      background-color: #0d3b5c;
-      width: 70%;
-      color: white;
+      background-color: #0b3c5d;
+      color: #fff;
       text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px 0;
       border-radius: 5px;
+      display: block;
+      width: 100%;
+      text-align: center;
     }
+
     section {
-      padding: 30px;
+      margin: 40px auto;
+      width: 80%;
     }
-    h3 {
-      margin-top: 40px;
+
+    section h3 {
+      font-size: 20px;
     }
-    footer {
+
+    .voltar {
       text-align: right;
-      padding: 20px;
+      margin: 40px 20px;
     }
-    footer a {
+
+    .voltar a {
       color: #00aaff;
       text-decoration: none;
+    }
+
+    .voltar a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <div class="top-bar">
-    <a href="index.html">← Voltar à Página Inicial</a>
-  </div>
+<div class="top-link">
+  <a href="index.html">← Voltar à Página Inicial</a>
+</div>
 
+<header>
+  <img src="capa-panorama.png" alt="Capa Panorama">
+</header>
+
+<div class="titulo">
   <h1>Panorama de RH, Jurídico Trabalhista e Sindical</h1>
   <h2>Maio 2025</h2>
+</div>
 
-  <div class="sumario" id="sumario">
-    <a href="#resumo">Panorama - Resumo</a>
-    <a href="#ranking">Ranking de Clientes</a>
-    <a href="#empregados">Empregados e SM</a>
-    <a href="#jt">JT</a>
-    <a href="#relacoes">Relações Sindicais</a>
-  </div>
+<div class="sumario" id="sumario">
+  <a href="#resumo">Panorama - Resumo</a>
+  <a href="#ranking">Ranking de Clientes</a>
+  <a href="#empregados">Empregados e SM</a>
+  <a href="#jt">JT</a>
+  <a href="#sindicais">Relações Sindicais</a>
+</div>
 
-  <section id="resumo">
-    <h3>Resumo</h3>
-    <p>Em construção...</p>
-  </section>
+<section id="resumo">
+  <h3>Resumo</h3>
+  <p>Em construção...</p>
+</section>
 
-  <section id="ranking">
-    <h3>Ranking de Clientes</h3>
-    <p>Em construção...</p>
-  </section>
+<section id="ranking">
+  <h3>Ranking de Clientes</h3>
+  <p>Em construção...</p>
+</section>
 
-  <section id="empregados">
-    <h3>Empregados e SM</h3>
-    <p>Em construção...</p>
-  </section>
+<section id="empregados">
+  <h3>Empregados e SM</h3>
+  <p>Em construção...</p>
+</section>
 
-  <section id="jt">
-    <h3>JT</h3>
-    <p>Em construção...</p>
-  </section>
+<section id="jt">
+  <h3>JT</h3>
+  <p>Em construção...</p>
+</section>
 
-  <section id="relacoes">
-    <h3>Relações Sindicais</h3>
-    <p>Em construção...</p>
-  </section>
+<section id="sindicais">
+  <h3>Relações Sindicais</h3>
+  <p>Em construção...</p>
+</section>
 
-  <footer>
-    <a href="#sumario">↑ Voltar ao Sumário</a>
-  </footer>
+<div class="voltar">
+  <a href="#sumario">↑ Voltar ao Sumário</a>
+</div>
 
 </body>
 </html>
