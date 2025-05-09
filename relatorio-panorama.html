@@ -1,103 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Panorama</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #F2F2F2;
+      background-color: #f2f2f2;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
     }
-    .topo {
-      background-color: white;
-      padding: 10px;
-    }
-    .link-topo {
-      background-color: white;
-      color: #000080;
-      padding: 8px;
-      display: inline-block;
-      font-size: 14px;
-    }
-    .sumario {
-      background-color: #F2F2F2;
-      text-align: center;
-      padding: 20px;
-    }
-    .sumario a {
+    a {
       display: block;
-      background-color: #0A2A47;
-      color: white;
-      margin: 10px auto;
-      padding: 12px;
-      width: 80%;
-      max-width: 800px;
+      padding: 10px;
+      background-color: white;
+      color: #003366;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
     }
-    section {
-      padding: 20px;
+    h1, h2 {
+      text-align: center;
       color: black;
+      margin: 10px 0;
+    }
+    .container {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 20px 0;
+    }
+    .btn {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 5px 0;
+      width: 60%;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .section {
+      margin: 40px;
     }
     h3 {
       color: black;
     }
-    .rodape-voltar {
-      text-align: right;
-      margin: 40px 20px 20px 0;
-    }
-    .rodape-voltar a {
-      color: #000000;
-      text-decoration: none;
-      font-size: 14px;
-    }
   </style>
 </head>
 <body>
+  <a href="index.html">← Voltar à Página Inicial</a>
 
-<div class="topo">
-  <a class="link-topo" href="index.html">← Voltar à Página Inicial</a>
-</div>
+  <div class="container">
+    <img src="capa-panorama.png" alt="Capa Panorama" width="90%">
+  </div>
 
-<div class="sumario">
-  <a href="#resumo">Panorama de RH, Jurídico Trabalhista e Sindical - Resumo</a>
-  <a href="#ranking">Panorama de RH, Jurídico Trabalhista e Sindical – Ranking Quantidade de Clientes</a>
-  <a href="#empregados">Panorama de RH, Jurídico Trabalhista e Sindical – Empregados e SM</a>
-  <a href="#jt">Panorama de RH, Jurídico Trabalhista e Sindical – JT</a>
-  <a href="#sindicais">Panorama de RH, Jurídico Trabalhista e Sindical – Relações Sindicais</a>
-</div>
+  <div class="container">
+    <h1>Panorama de RH, Jurídico Trabalhista e Sindical</h1>
+    <h2>Maio 2025</h2>
 
-<section id="resumo">
-  <h3>Resumo</h3>
-  <p>Em construção...</p>
-</section>
+    <a href="#resumo" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical - Resumo</a>
+    <a href="#clientes" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical – Ranking Quantidade de Clientes</a>
+    <a href="#empregados" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical – Empregados e SM</a>
+    <a href="#jt" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical – JT</a>
+    <a href="#sindicais" class="btn">Panorama de RH, Jurídico Trabalhista e Sindical – Relações Sindicais</a>
+  </div>
 
-<section id="ranking">
-  <h3>Ranking de Clientes</h3>
-  <p>Em construção...</p>
-</section>
+  <div class="section" id="resumo">
+    <h3>Resumo</h3>
+    <p>Em construção...</p>
+  </div>
 
-<section id="empregados">
-  <h3>Empregados e SM</h3>
-  <p>Em construção...</p>
-</section>
+  <div class="section" id="clientes">
+    <h3>Ranking de Clientes</h3>
+    <p>Em construção...</p>
+  </div>
 
-<section id="jt">
-  <h3>JT</h3>
-  <p>Em construção...</p>
-</section>
+  <div class="section" id="empregados">
+    <h3>Empregados e SM</h3>
+    <p>Em construção...</p>
+  </div>
 
-<section id="sindicais">
-  <h3>Relações Sindicais</h3>
-  <p>Em construção...</p>
-</section>
+  <div class="section" id="jt">
+    <h3>JT</h3>
+    <p>Em construção...</p>
+  </div>
 
-<div class="rodape-voltar">
-  <a href="index.html">↩ Voltar ao Sumário</a>
-</div>
-
+  <div class="section" id="sindicais">
+    <h3>Relações Sindicais</h3>
+    <p>Em construção...</p>
+  </div>
 </body>
 </html>
