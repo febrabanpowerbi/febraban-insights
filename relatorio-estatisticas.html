@@ -1,98 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Estatísticas - Maio 2025</title>
+  <meta charset="UTF-8">
+  <title>Relatório Estatísticas</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #05182B;
-      color: #ffffff;
       margin: 0;
-      padding: 0;
+      background-color: #041E32;
+      font-family: Arial, sans-serif;
+      color: #fff;
     }
-    a {
-      color: #48C3EF;
+
+    header {
+      background-color: white;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .top-link {
+      background-color: #00101e;
+      padding: 10px 20px;
+    }
+
+    .top-link a {
+      color: #90cdf4;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .titulo {
+      text-align: center;
+      padding: 20px 20px 10px;
+    }
+
+    .titulo h1 {
+      margin: 10px 0 5px;
+      font-size: 28px;
+    }
+
+    .titulo h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    .sumario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto 40px;
+      width: 80%;
+    }
+
+    .sumario a {
+      background-color: #0b3c5d;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px 0;
+      border-radius: 5px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    section {
+      margin: 40px auto;
+      width: 80%;
+    }
+
+    section h3 {
+      font-size: 20px;
+    }
+
+    .voltar {
+      text-align: right;
+      margin: 40px 20px;
+    }
+
+    .voltar a {
+      color: #00aaff;
       text-decoration: none;
     }
-    h1, h2 {
-      text-align: center;
-      margin-top: 10px;
-    }
-    #Sumário {
-      text-align: center;
-      margin: 20px;
-    }
-    #Sumário a {
-      display: block;
-      padding: 10px;
-      margin: 5px auto;
-      max-width: 800px;
-      background-color: #0B3C5D;
-      border-radius: 5px;
-    }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h3 {
-      margin-bottom: 10px;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-    }
-    footer {
-      text-align: right;
-      padding: 20px;
-      font-size: 14px;
-      color: #ccc;
+
+    .voltar a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div>
-    <a href="index.html">← Voltar à Página Inicial</a>
-  </div>
 
+<div class="top-link">
+  <a href="index.html">← Voltar à Página Inicial</a>
+</div>
+
+<header>
+  <img src="capa-estatisticas.png" alt="Capa Estatísticas">
+</header>
+
+<div class="titulo">
   <h1>Estatísticas</h1>
   <h2>Maio 2025</h2>
+</div>
 
-  <div class="Sumário" id="Sumário">
-    <a href="#tecnologia">Ocupações em Tecnologia no Setor Bancário</a>
-    <a href="#encontro">34º Encontro de RH e Trabalhista</a>
-    <a href="#relatorio3">Relatório 3 - Em Construção</a>
-    <a href="#relatorio4">Relatório 4 - Em Construção</a>
-  </div>
+<div class="sumario" id="sumario">
+  <a href="#tecnologia">Ocupações em Tecnologia no Setor Bancário</a>
+  <a href="#encontro">34º Encontro de RH e Trabalhista</a>
+  <a href="#relatorio3">Relatório 3 - Em Construção</a>
+  <a href="#relatorio4">Relatório 4 - Em Construção</a>
+</div>
 
-  <section id="tecnologia">
-    <h3>Ocupações em Tecnologia no Setor Bancário</h3>
-    <iframe title="Tecnologia" 
-            src="https://app.powerbi.com/view?r=eyJrIjoiYWJlMzM0YWUtZGI2MC00ZTQ4LThhZWItNDYzZmM3NDFlNDdkIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" 
-            allowFullScreen="true">
-    </iframe>
-  </section>
+<section id="tecnologia">
+  <h3>Ocupações em Tecnologia no Setor Bancário</h3>
+  <p>Em construção...</p>
+</section>
 
-  <section id="encontro">
-    <h3>34º Encontro de RH e Trabalhista do Setor Bancário</h3>
-    <p>Em construção...</p>
-  </section>
+<section id="encontro">
+  <h3>34º Encontro de RH e Trabalhista</h3>
+  <p>Em construção...</p>
+</section>
 
-  <section id="relatorio3">
-    <h3>Relatório 3</h3>
-    <p>Em construção...</p>
-  </section>
+<section id="relatorio3">
+  <h3>Relatório 3</h3>
+  <p>Em construção...</p>
+</section>
 
-  <section id="relatorio4">
-    <h3>Relatório 4</h3>
-    <p>Em construção...</p>
-  </section>
+<section id="relatorio4">
+  <h3>Relatório 4</h3>
+  <p>Em construção...</p>
+</section>
 
-  <footer>
-    ↑ <a href="#Sumário">Voltar ao Sumário</a>
-  </footer>
+<div class="voltar">
+  <a href="#sumario">↑ Voltar ao Sumário</a>
+</div>
+
 </body>
 </html>
