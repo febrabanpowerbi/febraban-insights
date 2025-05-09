@@ -1,91 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Estatísticas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panorama RH - Maio 2025</title>
   <style>
     body {
-      background-color: #f2f2f2;
-      margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #D9D9D9;
+      color: #000;
+      margin: 0;
+      padding: 0;
     }
+
     a {
-      display: block;
+      color: #004080;
+      text-decoration: none;
+    }
+
+    .menu-voltar {
       padding: 10px;
-      background-color: white;
-      color: #003366;
-      text-decoration: none;
-      font-weight: bold;
+      background-color: #000d1a;
     }
-    h1, h2 {
+
+    img.capa {
+      width: 100%;
+      display: block;
+    }
+
+    .conteudo {
+      background-color: #D9D9D9;
+      color: #000;
+      padding: 20px;
       text-align: center;
-      color: black;
-      margin: 10px 0;
     }
-    .container {
-      text-align: center;
-      background-color: #f2f2f2;
-      padding: 20px 0;
-    }
-    .btn {
-      background-color: #003366;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      margin: 5px 0;
-      width: 60%;
+
+    .conteudo a {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      max-width: 800px;
+      background-color: #0B3C5D;
+      color: #ffffff;
       border-radius: 5px;
-      font-size: 14px;
-      text-align: center;
       text-decoration: none;
-      display: inline-block;
     }
-    .section {
-      margin: 40px;
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #000;
     }
-    h3 {
-      color: black;
+
+    h1, h2, h3 {
+      color: #000;
+    }
+
+    p {
+      color: #000;
+    }
+
+    footer {
+      text-align: right;
+      padding: 20px;
+      font-size: 14px;
+      color: #444;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">← Voltar à Página Inicial</a>
 
-  <div class="container">
-    <img src="capa-estatisticas.png" alt="Capa Estatísticas" width="90%">
+  <div class="menu-voltar">
+    <a href="index.html">← Voltar à Página Inicial</a>
   </div>
 
-  <div class="container">
-    <h1>Estatísticas</h1>
-    <h2>Maio 2025</h2>
+  <img src="capa-panorama.png" alt="Capa Panorama" class="capa"/>
 
-    <a href="#tecnologia" class="btn">Ocupações em Tecnologia no Setor Bancário</a>
-    <a href="#encontro" class="btn">34° Encontro de RH e Trabalhista</a>
-    <a href="#relatorio3" class="btn">Relatório 3 - Em Construção</a>
-    <a href="#relatorio4" class="btn">Relatório 4 - Em Construção</a>
+  <div class="conteudo" id="Sumário">
+    <a href="#resumo">Panorama - Resumo</a>
+    <a href="#clientes">Ranking de Clientes</a>
+    <a href="#empregados">Empregados e SM</a>
+    <a href="#jt">JT</a>
+    <a href="#sindicais">Relações Sindicais</a>
   </div>
 
-  <div class="section" id="tecnologia">
-    <h3>Ocupações em Tecnologia no Setor Bancário</h3>
-    <iframe title="Tecnologia" width="100%" height="400" 
-      src="https://app.powerbi.com/view?r=eyJrIjoiYWJlMzM0YWUtZGI2MC00ZTQ4LThhZWItNDYzZmM3NDFlNDdkIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" 
-      frameborder="0" allowFullScreen="true">
-    </iframe>
-  </div>
-
-  <div class="section" id="encontro">
-    <h3>34° Encontro de RH e Trabalhista do Setor Bancário</h3>
+  <section id="resumo">
+    <h3>Resumo</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="section" id="relatorio3">
-    <h3>Relatório 3</h3>
+  <section id="clientes">
+    <h3>Ranking de Clientes</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
 
-  <div class="section" id="relatorio4">
-    <h3>Relatório 4</h3>
+  <section id="empregados">
+    <h3>Empregados e SM</h3>
     <p>Em construção...</p>
-  </div>
+  </section>
+
+  <section id="jt">
+    <h3>JT</h3>
+    <p>Em construção...</p>
+  </section>
+
+  <section id="sindicais">
+    <h3>Relações Sindicais</h3>
+    <p>Em construção...</p>
+  </section>
+
+  <footer>
+    ↑ <a href="#Sumário">Voltar ao Sumário</a>
+  </footer>
+
 </body>
 </html>
