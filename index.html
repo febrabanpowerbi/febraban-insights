@@ -19,8 +19,8 @@
         .container {
             width: 100%;
             height: 100%;
-            background-color: #00c2e2; /* cor de segurança */
-            background-image: url("novo-slide-febraban.png"); /* <--- Certifique-se do nome e extensão! */
+            background-color: #00c2e2;
+            background-image: url("novo-slide-febraban.png"); /* certifique-se do nome e da extensão */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -29,22 +29,26 @@
 
         .link-area {
             position: absolute;
+            display: block;
             cursor: pointer;
+            z-index: 2;
+            /* temporário para ajuste visual (remova depois de testar): */
+            /* border: 2px dashed red; */
         }
 
-        /* Ajuste conforme sua imagem */
+        /* Ajustados com base na imagem */
         .btn-panorama {
-            top: 65%;
-            left: 23%;
+            top: 58%;      /* movido um pouco mais para cima */
+            left: 21%;     /* reposicionado mais centralizado no ícone */
             width: 160px;
-            height: 180px;
+            height: 160px;
         }
 
         .btn-estatisticas {
-            top: 65%;
-            left: 60%;
-            width: 140px;
-            height: 180px;
+            top: 58%;
+            left: 58.5%;
+            width: 160px;
+            height: 160px;
         }
 
         .rodape {
@@ -58,7 +62,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Botões invisíveis com links -->
+        <!-- Áreas clicáveis posicionadas diretamente sobre os ícones -->
         <a href="relatorio-panorama.html" class="link-area btn-panorama" title="Ir para Panorama"></a>
         <a href="relatorio-estatisticas.html" class="link-area btn-estatisticas" title="Ir para Estatísticas"></a>
 
