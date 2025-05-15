@@ -9,26 +9,30 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             background-color: #000000;
             height: 100vh;
-            position: relative;
             font-family: Arial, sans-serif;
         }
+
         .container {
             width: 100%;
             height: 100%;
-            background-image: url("novo-slide-febraban");
+            background-color: #00c2e2; /* cor de segurança */
+            background-image: url("novo-slide-febraban.png"); /* <--- Certifique-se do nome e extensão! */
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             position: relative;
         }
+
         .link-area {
             position: absolute;
             cursor: pointer;
         }
 
-        /* Ajuste as posições abaixo com base na imagem */
+        /* Ajuste conforme sua imagem */
         .btn-panorama {
             top: 65%;
             left: 23%;
@@ -54,13 +58,10 @@
 </head>
 <body>
     <div class="container">
-        <!-- Botão invisível sobre "Panorama" -->
+        <!-- Botões invisíveis com links -->
         <a href="relatorio-panorama.html" class="link-area btn-panorama" title="Ir para Panorama"></a>
-
-        <!-- Botão invisível sobre "Estatísticas" -->
         <a href="relatorio-estatisticas.html" class="link-area btn-estatisticas" title="Ir para Estatísticas"></a>
 
-        <!-- Rodapé corrigido -->
         <div class="rodape">@ Febraban 2025 - Portal de Dashboards Estratégicos</div>
     </div>
 </body>
