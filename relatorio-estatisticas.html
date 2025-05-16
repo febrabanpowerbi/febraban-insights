@@ -72,15 +72,15 @@
       border: none;
     }
 
-    img {
-      max-width: 90%;
-      height: auto;
-    }
-
+    /* Responsividade */
     @media screen and (max-width: 768px) {
       .btn {
         width: 90%;
-        font-size: 16px;
+        font-size: 13px;
+      }
+
+      .container img {
+        width: 90% !important;
       }
 
       .section {
@@ -99,7 +99,7 @@
 
   <div class="container">
     <a name="topo"></a>
-    <img src="capa-estatisticas.png" alt="Capa Estatísticas">
+    <img src="capa-estatisticas.png" alt="Capa Estatísticas" width="75%">
   </div>
 
   <div class="container">
@@ -111,8 +111,7 @@
 
   <div class="section" id="tecnologia">
     <h3>Ocupações em Tecnologia no Setor Bancário</h3>
-    <iframe 
-      title="Tecnologia"
+    <iframe title="Tecnologia"
       src="https://app.powerbi.com/view?r=eyJrIjoiYWJlMzM0YWUtZGI2MC00ZTQ4LThhZWItNDYzZmM3NDFlNDdkIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9"
       allowFullScreen="true">
     </iframe>
@@ -138,4 +137,3 @@
   </div>
 </body>
 </html>
-
