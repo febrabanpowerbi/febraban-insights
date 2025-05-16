@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>FEBRABAN - Slide com Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * {
             margin: 0;
@@ -10,21 +11,20 @@
             box-sizing: border-box;
         }
 
-        body {
-            background-color: #000000; /* fundo neutro fora da imagem */
-            height: 100vh;
+        html, body {
+            height: 100%;
+            background-color: #000000;
             font-family: Arial, sans-serif;
         }
 
         .container {
+            position: relative;
             width: 100%;
             height: 100%;
-            background-color: #f2f2f2; /* fallback */
-            background-image: url("novo-slide-febraban.png"); /* nome correto do arquivo */
-            background-size: cover;
-            background-position: center;
+            background-image: url("novo-slide-febraban.png");
+            background-size: contain;
             background-repeat: no-repeat;
-            position: relative;
+            background-position: center;
         }
 
         .link-area {
@@ -32,23 +32,21 @@
             display: block;
             cursor: pointer;
             z-index: 2;
-            /* Ative abaixo se quiser ver a área de clique: */
-            /* border: 2px dashed red; */
         }
 
-        /* Posição ajustada com base na imagem */
+        /* Usa unidade vh/vw para manter proporção com imagem */
         .btn-panorama {
-            top: 60%;
-            left: 15%;
-            width: 50%;
-            height: 18%;
+            top: 60vh;
+            left: 15vw;
+            width: 35vw;
+            height: 14vh;
         }
 
         .btn-estatisticas {
-            top: 60%;
-            left: 57.5%;
-            width: 30%;
-            height: 18%;
+            top: 60vh;
+            left: 55vw;
+            width: 30vw;
+            height: 14vh;
         }
 
         .rodape {
@@ -56,13 +54,23 @@
             bottom: 10px;
             left: 20px;
             color: #ccc;
-            font-size: 12px;
+            font-size: 1.2vw;
+        }
+
+        /* Ajustes para telas menores */
+        @media (max-width: 768px) {
+            .btn-panorama, .btn-estatisticas {
+                height: 10vh;
+            }
+
+            .rodape {
+                font-size: 2.5vw;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Áreas clicáveis sobre os ícones -->
         <a href="relatorio-panorama.html" class="link-area btn-panorama" title="Ir para Panorama"></a>
         <a href="relatorio-estatisticas.html" class="link-area btn-estatisticas" title="Ir para Estatísticas"></a>
 
