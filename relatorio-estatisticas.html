@@ -9,6 +9,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
     }
+
     a {
       display: block;
       padding: 10px;
@@ -17,16 +18,19 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     h1, h2 {
       text-align: center;
       color: black;
       margin: 10px 0;
     }
+
     .container {
       text-align: center;
       background-color: #f2f2f2;
-      padding: 20px 0;
+      padding: 10px 0;
     }
+
     .btn {
       background-color: #000000;
       color: white;
@@ -40,21 +44,53 @@
       text-decoration: none;
       display: inline-block;
     }
+
     .section {
       margin: 40px;
     }
+
     h3 {
       color: black;
     }
+
     .footer-link {
       text-align: right;
       padding: 20px;
     }
+
     .footer-link a {
       background: none;
       color: #000000;
       font-weight: bold;
       text-decoration: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 80vh;
+      min-height: 600px;
+      border: none;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      .btn {
+        width: 90%;
+        font-size: 16px;
+      }
+
+      .section {
+        margin: 20px;
+      }
+
+      iframe {
+        height: 60vh;
+        min-height: 400px;
+      }
     }
   </style>
 </head>
@@ -63,7 +99,7 @@
 
   <div class="container">
     <a name="topo"></a>
-    <img src="capa-estatisticas.png" alt="Capa Estatísticas" width="90%">
+    <img src="capa-estatisticas.png" alt="Capa Estatísticas">
   </div>
 
   <div class="container">
@@ -75,9 +111,10 @@
 
   <div class="section" id="tecnologia">
     <h3>Ocupações em Tecnologia no Setor Bancário</h3>
-    <iframe title="Tecnologia" width="100%" height="700"
+    <iframe 
+      title="Tecnologia"
       src="https://app.powerbi.com/view?r=eyJrIjoiYWJlMzM0YWUtZGI2MC00ZTQ4LThhZWItNDYzZmM3NDFlNDdkIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9"
-      frameborder="0" allowFullScreen="true">
+      allowFullScreen="true">
     </iframe>
   </div>
 
@@ -101,3 +138,4 @@
   </div>
 </body>
 </html>
+
