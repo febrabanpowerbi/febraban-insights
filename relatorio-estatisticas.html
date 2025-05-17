@@ -43,6 +43,22 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #333333;
+    }
+
+    .btn.destaque {
+      background-color: #00c2e2;
+      color: #000000;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .btn.destaque:hover {
+      background-color: #00aac6;
     }
 
     .section {
@@ -102,6 +118,11 @@
     <img src="capa-estatisticas.png" alt="Capa Estatísticas" width="75%">
   </div>
 
+  <!-- Botão para acessar o Panorama -->
+  <div class="container">
+    <a href="relatorio-panorama.html" class="btn destaque">← Acessar Panorama de RH</a>
+  </div>
+
   <div class="container">
     <a href="#tecnologia" class="btn">Ocupações em Tecnologia no Setor Bancário</a>
     <a href="#encontro" class="btn">34° Encontro de RH e Trabalhista</a>
@@ -113,7 +134,7 @@
     <h3>Ocupações em Tecnologia no Setor Bancário</h3>
     <iframe title="Tecnologia"
       src="https://app.powerbi.com/view?r=eyJrIjoiYWJlMzM0YWUtZGI2MC00ZTQ4LThhZWItNDYzZmM3NDFlNDdkIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9"
-      allowFullScreen="true">
+      allowfullscreen>
     </iframe>
   </div>
 
