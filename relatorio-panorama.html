@@ -28,7 +28,7 @@
     .container {
       text-align: center;
       background-color: #f2f2f2;
-      padding: 10px 0; /* Reduzido para melhor ajuste visual */
+      padding: 10px 0;
     }
 
     .btn {
@@ -43,6 +43,22 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #333333;
+    }
+
+    .btn.destaque {
+      background-color: #00c2e2;
+      color: #000000;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .btn.destaque:hover {
+      background-color: #00aac6;
     }
 
     .section {
@@ -60,7 +76,7 @@
 
     .footer-link a {
       background: none;
-      color: #000000; /* Corrigido */
+      color: #000000;
       font-weight: bold;
       text-decoration: none;
     }
@@ -68,7 +84,7 @@
     iframe {
       width: 100%;
       height: 80vh;
-      min-height: 600px; /* Corrigido: era 'min-heigt' */
+      min-height: 600px;
       border: none;
     }
   </style>
@@ -78,7 +94,12 @@
 
   <div class="container">
     <a name="topo"></a>
-    <img src="capa-panorama.png" alt="Capa Panorama" width="75%"> <!-- Ajustado para 75% -->
+    <img src="capa-panorama.png" alt="Capa Panorama" width="75%">
+  </div>
+
+  <!-- Botão para o relatório de Estatísticas -->
+  <div class="container">
+    <a href="relatorio-estatisticas.html" class="btn destaque">→ Acessar Relatório de Estatísticas</a>
   </div>
 
   <div class="container">
@@ -101,7 +122,7 @@
 
   <div class="section" id="empregados">
     <h3>Empregados e SM</h3>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzRjYzU0ZWMtMDhjNy00YjViLTg5NWItMjlmZTJlNGJhMzUxIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" allowFullScreen="true"></iframe>
+    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzRjYzU0ZWMtMDhjNy00YjViLTg5NWItMjlmZTJlNGJhMzUxIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" allowfullscreen></iframe>
   </div>
 
   <div class="section" id="jt">
