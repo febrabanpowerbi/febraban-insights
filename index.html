@@ -13,18 +13,19 @@
 
     html, body {
       height: 100%;
-      background-color: #000000;
+      background-color: #000;
       font-family: Arial, sans-serif;
+      overflow: hidden;
     }
 
     .container {
       position: relative;
-      width: 100%;
+      width: 100vw;
       height: 100vh;
       background-image: url("novo-slide-febraban.png");
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: center;
     }
 
     .link-area {
@@ -33,24 +34,29 @@
       cursor: pointer;
       z-index: 2;
       transition: box-shadow 0.3s ease;
+      touch-action: manipulation;
     }
 
-    .link-area:hover {
-      box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+    /* Efeito hover visível apenas em desktop */
+    @media (hover: hover) {
+      .link-area:hover {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+      }
     }
 
+    /* Base em proporção da tela */
     .btn-panorama {
-      top: 60%;
-      left: 18%;
-      width: 14%;
-      height: 22%;
+      top: 58vh;
+      left: 19vw;
+      width: 14vw;
+      height: 22vh;
     }
 
     .btn-estatisticas {
-      top: 60%;
-      left: 58%;
-      width: 14%;
-      height: 22%;
+      top: 58vh;
+      left: 58vw;
+      width: 14vw;
+      height: 22vh;
     }
 
     .rodape {
@@ -60,21 +66,23 @@
       color: #ccc;
       font-size: 0.75vw;
       opacity: 0.7;
+      z-index: 1;
     }
 
-    @media (max-width: 768px) {
+    /* Ajuste fino para celulares em pé */
+    @media (max-width: 600px) and (orientation: portrait) {
       .btn-panorama {
-        width: 36%;
-        height: 24%;
-        top: 58%;
-        left: 6%;
+        top: 59vh;
+        left: 8vw;
+        width: 36vw;
+        height: 24vh;
       }
 
       .btn-estatisticas {
-        width: 32%;
-        height: 22%;
-        top: 58%;
-        left: 60%;
+        top: 59vh;
+        left: 56vw;
+        width: 36vw;
+        height: 24vh;
       }
 
       .rodape {
@@ -85,8 +93,8 @@
 </head>
 <body>
   <div class="container">
-    <a href="relatorio-panorama.html" class="link-area btn-panorama" title="Ir para Panorama"></a>
-    <a href="relatorio-estatisticas.html" class="link-area btn-estatisticas" title="Ir para Estatísticas"></a>
+    <a href="https://febrabanpowerbi.github.io/febraban-insights/relatorio-panorama.html" class="link-area btn-panorama" title="Ir para Panorama"></a>
+    <a href="https://febrabanpowerbi.github.io/febraban-insights/relatorio-estatisticas.html" class="link-area btn-estatisticas" title="Ir para Estatísticas"></a>
     <div class="rodape">@ Febraban 2025 - Portal de Dashboards Estratégicos</div>
   </div>
 </body>
