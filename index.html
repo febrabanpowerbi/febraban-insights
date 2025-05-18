@@ -37,26 +37,26 @@
       touch-action: manipulation;
     }
 
-    /* Efeito hover visível apenas em desktop */
+    /* Hover só em dispositivos com mouse */
     @media (hover: hover) {
       .link-area:hover {
         box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
       }
     }
 
-    /* Base em proporção da tela */
+    /* DESKTOP (base) */
     .btn-panorama {
-      top: 58vh;
-      left: 19vw;
-      width: 14vw;
-      height: 22vh;
+      top: 56%;
+      left: 28%;
+      width: 15%;
+      height: 26%;
     }
 
     .btn-estatisticas {
-      top: 58vh;
-      left: 58vw;
-      width: 14vw;
-      height: 22vh;
+      top: 56%;
+      left: 58%;
+      width: 15%;
+      height: 26%;
     }
 
     .rodape {
@@ -69,20 +69,20 @@
       z-index: 1;
     }
 
-    /* Ajuste fino para celulares em pé */
-    @media (max-width: 600px) and (orientation: portrait) {
+    /* MOBILE: Telas menores em retrato */
+    @media (max-width: 768px) {
       .btn-panorama {
-        top: 59vh;
-        left: 8vw;
-        width: 36vw;
-        height: 24vh;
+        top: 61%;
+        left: 13%;
+        width: 32%;
+        height: 22%;
       }
 
       .btn-estatisticas {
-        top: 59vh;
-        left: 56vw;
-        width: 36vw;
-        height: 24vh;
+        top: 61%;
+        left: 55%;
+        width: 32%;
+        height: 22%;
       }
 
       .rodape {
