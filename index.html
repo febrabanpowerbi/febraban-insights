@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>FEBRABAN - Slide com Links</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portal de Dashboards Estratégicos da Febraban com acesso aos relatórios Panorama e Estatísticas.">
   <style>
     * {
       margin: 0;
@@ -22,6 +23,7 @@
       position: relative;
       width: 100vw;
       height: 100vh;
+      background-color: #111; /* fallback */
       background-image: url("novo-slide-febraban.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -33,7 +35,7 @@
       display: block;
       cursor: pointer;
       z-index: 2;
-      /* Nenhum efeito visual */
+      text-indent: -9999px; /* Esconde texto visualmente, mantém acessibilidade */
     }
 
     /* DESKTOP */
@@ -61,6 +63,27 @@
       z-index: 1;
     }
 
+    /* TABLETS */
+    @media (max-width: 1024px) {
+      .btn-panorama {
+        top: 57%;
+        left: 25%;
+        width: 22%;
+        height: 20%;
+      }
+
+      .btn-estatisticas {
+        top: 57%;
+        left: 52%;
+        width: 22%;
+        height: 20%;
+      }
+
+      .rodape {
+        font-size: 1.5vw;
+      }
+    }
+
     /* MOBILE */
     @media (max-width: 768px) {
       .btn-panorama {
@@ -85,8 +108,8 @@
 </head>
 <body>
   <div class="container">
-    <a href="https://febrabanpowerbi.github.io/febraban-insights/relatorio-panorama.html" class="link-area btn-panorama" title="Ir para Panorama"></a>
-    <a href="https://febrabanpowerbi.github.io/febraban-insights/relatorio-estatisticas.html" class="link-area btn-estatisticas" title="Ir para Estatísticas"></a>
+    <a href="https://febrabanpowerbi.github.io/febraban-insights/relatorio-panorama.html" class="link-area btn-panorama" aria-label="Ir para Panorama" title="Ir para Panorama">Panorama</a>
+    <a href="https://febrabanpowerbi.github.io/febraban-insights/relatorio-estatisticas.html" class="link-area btn-estatisticas" aria-label="Ir para Estatísticas" title="Ir para Estatísticas">Estatísticas</a>
     <div class="rodape">@ Febraban 2025 - Portal de Dashboards Estratégicos</div>
   </div>
 </body>
